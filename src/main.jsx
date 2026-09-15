@@ -50,6 +50,7 @@ const certs = [
 function App() {
   const [active, setActive] = useState("HOME");
   const [online, setOnline] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const sections = ["HOME", "PROFILE", "EXPERIENCE", "STACK", "CERTIFICATIONS", "CONTACT"];
@@ -68,6 +69,7 @@ function App() {
 
   const go = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    setMenuOpen(false);
   };
 
   return (
@@ -75,14 +77,17 @@ function App() {
       <div className="noise" />
       <header className="nav">
         <button className="brand" onClick={() => go("HOME")}>SG<span>//</span>INFRA</button>
-        <nav>
+        <button className="nav-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+          <span/><span/><span/>
+        </button>
+        <nav className={menuOpen ? "open" : ""}>
           {["PROFILE", "EXPERIENCE", "STACK", "CERTIFICATIONS", "CONTACT"].map((item) => (
             <button className={active === item ? "active" : ""} onClick={() => go(item)} key={item}>
               {item}
             </button>
           ))}
         </nav>
-        <a className="nav-link" href="https://github.com/" target="_blank" rel="noreferrer">GITHUB <ArrowUpRight size={14}/></a>
+        <a className="nav-link" href="https://github.com/Susovan-G" target="_blank" rel="noreferrer">GITHUB <ArrowUpRight size={14}/></a>
       </header>
 
       <main>
@@ -189,7 +194,8 @@ function App() {
             <div className="contact-links">
               <a href="mailto:susovan.ghara@icloud.com"><Mail size={17}/> EMAIL</a>
               <a href="https://www.linkedin.com/in/susovanghara/" target="_blank" rel="noreferrer"><Linkedin size={17}/> LINKEDIN</a>
-              <a href="https://github.com/" target="_blank" rel="noreferrer"><Github size={17}/> GITHUB</a>
+              <a href="https://github.com/Susovan-G" target="_blank" rel="noreferrer"><Github size={17}/> GITHUB</a>
+              <a href="/susovan-ghara-infrastructure/resume.pdf" download><ArrowUpRight size={17}/> RESUME</a>
             </div>
           </div>
         </section>
