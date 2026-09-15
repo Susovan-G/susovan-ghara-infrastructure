@@ -195,7 +195,7 @@ function App() {
               <a href="mailto:susovan.ghara@icloud.com"><Mail size={17}/> EMAIL</a>
               <a href="https://www.linkedin.com/in/susovanghara/" target="_blank" rel="noreferrer"><Linkedin size={17}/> LINKEDIN</a>
               <a href="https://github.com/Susovan-G" target="_blank" rel="noreferrer"><Github size={17}/> GITHUB</a>
-              <a href="/susovan-ghara-infrastructure/resume.pdf" download><ArrowUpRight size={17}/> RESUME</a>
+              <a href="/resume.pdf" download><ArrowUpRight size={17}/> RESUME</a>
             </div>
           </div>
         </section>
