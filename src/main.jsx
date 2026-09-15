@@ -205,9 +205,6 @@ function App() {
 
         <section id="CONTACT" className="section contact">
           <div className="section-index mono">05 / CONTACT</div>
-
-        <section id="CONTACT" className="section contact">
-          <div className="section-index mono">05 / CONTACT</div>
           <div>
             <p className="kicker">LET'S CONNECT</p>
             <h2>Ready for the next<br/><span>infrastructure challenge?</span></h2>
