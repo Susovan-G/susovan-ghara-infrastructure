@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://susovan-g.github.io/susovan-ghara-infrastructure/sitemap.xml
+Sitemap: https://susovanghara.pages.dev/sitemap.xml
