@@ -82,12 +82,23 @@ function App() {
       <div className="noise" />
       <header className="nav">
         <button className="brand" onClick={() => go("HOME")}>SG<span>//</span>IT ENGINEER</button>
-        <button className="nav-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
+        <button
+          className="nav-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          aria-controls="primary-nav"
+        >
           <span/><span/><span/>
         </button>
-        <nav className={menuOpen ? "open" : ""}>
+        <nav id="primary-nav" className={menuOpen ? "open" : ""}>
           {["PROFILE", "EXPERIENCE", "STACK", "CERTIFICATIONS", "TRAININGS", "CONTACT"].map((item) => (
-            <button className={active === item ? "active" : ""} onClick={() => go(item)} key={item}>
+            <button
+              className={active === item ? "active" : ""}
+              aria-current={active === item ? "true" : undefined}
+              onClick={() => go(item)}
+              key={item}
+            >
               {item}
             </button>
           ))}
