@@ -81,7 +81,7 @@ function App() {
     <div className="app">
       <div className="noise" />
       <header className="nav">
-        <button className="brand" onClick={() => go("HOME")}>SG<span>//</span>INFRA</button>
+        <button className="brand" onClick={() => go("HOME")}>SG<span>//</span>IT ENGINEER</button>
         <button className="nav-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
           <span/><span/><span/>
         </button>
