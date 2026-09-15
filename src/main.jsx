@@ -136,7 +136,7 @@ function App() {
             <p className="kicker">ENGINEER // OPERATIONS // INFRASTRUCTURE</p>
             <h2>Building the systems<br/>behind the systems.</h2>
             <p className="body">
-              Cloud & Infrastructure Engineer with 10 years' experience administering Windows Server environments,
+              Cloud & Infrastructure Engineer with 11 year's experience administering Windows Server environments,
               Active Directory and Microsoft Azure across enterprise IT teams. Skilled in identity and access management,
               security monitoring and incident response, and PowerShell-based automation.
             </p>
