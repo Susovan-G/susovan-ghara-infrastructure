@@ -47,13 +47,18 @@ const certs = [
   "ITIL 4 Foundation"
 ];
 
+const trainings = [
+  "AI and Data Analytics — PL-400: Microsoft Power Platform Developer",
+  "Digital — PL-300: Microsoft Power BI Data Analyst"
+];
+
 function App() {
   const [active, setActive] = useState("HOME");
   const [online, setOnline] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const sections = ["HOME", "PROFILE", "EXPERIENCE", "STACK", "CERTIFICATIONS", "CONTACT"];
+    const sections = ["HOME", "PROFILE", "EXPERIENCE", "STACK", "CERTIFICATIONS", "TRAININGS", "CONTACT"];
     const onScroll = () => {
       const y = window.scrollY + 180;
       let current = "HOME";
@@ -81,7 +86,7 @@ function App() {
           <span/><span/><span/>
         </button>
         <nav className={menuOpen ? "open" : ""}>
-          {["PROFILE", "EXPERIENCE", "STACK", "CERTIFICATIONS", "CONTACT"].map((item) => (
+          {["PROFILE", "EXPERIENCE", "STACK", "CERTIFICATIONS", "TRAININGS", "CONTACT"].map((item) => (
             <button className={active === item ? "active" : ""} onClick={() => go(item)} key={item}>
               {item}
             </button>
@@ -185,6 +190,21 @@ function App() {
             </div>
           </div>
         </section>
+
+                <section id="TRAININGS" className="section split">
+          <div className="section-index mono">05 / TRAININGS</div>
+          <div className="section-content">
+            <p className="kicker">PROFESSIONAL DEVELOPMENT</p>
+            <div className="cert-list">
+              {trainings.map((c, i) => (
+                <div className="cert" key={c}><span className="mono">0{i + 1}</span><span>{c}</span><span className="verified">✓ COMPLETED</span></div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="CONTACT" className="section contact">
+          <div className="section-index mono">05 / CONTACT</div>
 
         <section id="CONTACT" className="section contact">
           <div className="section-index mono">05 / CONTACT</div>
