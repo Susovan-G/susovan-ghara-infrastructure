@@ -124,7 +124,7 @@ function App() {
               </div>
             ))}
             <div className="panel-bottom">
-              <span>EXPERIENCE</span><strong>10+ YRS</strong>
+              <span>EXPERIENCE</span><strong>11+ YRS</strong>
             </div>
           </aside>
           <div className="hero-grid-tag mono">SYS.01 / CORE</div>
@@ -141,7 +141,7 @@ function App() {
               security monitoring and incident response, and PowerShell-based automation.
             </p>
             <div className="metrics">
-              <div><strong>10+</strong><span>YEARS EXPERIENCE</span></div>
+              <div><strong>11+</strong><span>YEARS EXPERIENCE</span></div>
               <div><strong>HYBRID</strong><span>INFRASTRUCTURE</span></div>
               <div><strong>ENTERPRISE</strong><span>OPERATIONS</span></div>
             </div>
